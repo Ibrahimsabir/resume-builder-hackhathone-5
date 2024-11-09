@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet" />
+</head>
+<body>
+
+    
+        <h1>Shareable Resume Builder by Sualeha Khan</h1>
+   
+        <form id="resumeForm" style="margin-top: 60px; display:flex; flex-direction:row;  ">
+            <div class="left-section" style="width: 30%;background-color:hsl(188, 42%, 33%); color: white; padding:10px; border-radius: 8px;">
+                <img src="./image/profile-pic.jpg.jpg" alt="Profile Picture">
+                <section class="objective">
+                    <h2 >Career Objective</h2>
+                    <p>Passionate software developer seeking to apply technical skills in a 
+                        challenging role to build innovative and efficient solutions</p>
+                    </section>
+                    <section class="certification">
+                        <h2 >Certification</h2>
+                        <p><strong>Artificial Intelligence, web 3.0 nad Metaverse</strong> From Governor House Karachi On Going</p>
+                        </section>
+            </div>
+            <div style="width:70%">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="name" style="font-size: 25px; ">Name:</label><br>
+            <input type="text" id="name" class="class1" required placeholder="Enter Your Name..." required> <br/> 
+        <label for="email" style="font-size: 25px; ">Email:</label><br>
+        <input type="email" id="email" class="class1" required placeholder="Enter Your Email..." required/> <br/>
+        <label for="phone" style="font-size: 25px; ">Phone: </label><br>
+        <input type="tel" id="phone" class="class1" required placeholder="Enter Your Contact No..." required/> <br/>
+        </fieldset>
+        <fieldset>
+        <legend>Qualification</legend>
+        
+        <textarea for="Qualification" id="qualification" rows="5" placeholder="Your qualification..." required></textarea>
+   
+         </fieldset>
+        <fieldset>
+            <legend>
+                Work Experience
+            </legend>
+            <textarea for="Experience" id="Experience" rows="5" placeholder="Your Experience..." required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Skills
+            </legend>
+            <textarea for="skills" id="Skills" rows="5" placeholder="Your Skills..." required></textarea>
+        </fieldset>
+        <button type="submit">Generate Resume</button>
+    </div>
+        </form>
+
+    <br>
+    <div id="Resume-generated" contenteditable="true">
+        <!--Generated resume displayed-->
+    </div>
+    <br>
+    <!--section For the Shareable link -->
+
+    <div id="shareable-link-container">
+        <h2>Shareable Link</h2>
+        <p><b>Here is the unique id for you resume:</b></p>
+    
+        <a href="#" id="shareable-link" target="_blank">sualehasabir@gmail.com</a><br>
+        <button id="DownloadPDF"><b>Download for PDF</b></button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

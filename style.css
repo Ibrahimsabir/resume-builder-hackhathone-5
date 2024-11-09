@@ -1,0 +1,177 @@
+body{
+    font-family: Dosis;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding:5px;
+}
+#resumeForm{
+    width: 90%;
+    background-color: rgb(193, 238, 236);
+    border:2px solid rgb(75, 45, 131) ;
+    padding: 20px;
+    border-radius: 8px;
+    margin:auto
+
+}
+.left-section{
+    width: 30%;
+    background-color:#317079;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid  rgb(253, 253, 253);
+    border-radius: 8px 0px 0px 8px;
+
+}
+.left-section img{
+    width:150px;
+    margin: 10%;
+    border-radius: 50%;
+    border: 4px solid rgb(255,255,255);
+
+}
+.objective{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.certification{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.left-section h2{
+    color:white;
+    width: 70%;
+    border: 4px solid rgb(255, 255, 255);
+    padding: 10px 5px 10px 5px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(135, 184, 182);
+    border-radius: 8px;
+
+}
+.left-section p{
+    padding: 30px;
+    text-align: justify;
+    color: white;
+    hyphens: auto;
+    font-size: 25px;
+}
+
+h1{
+    justify-self: center;
+}
+
+legend{
+    font-size: 30px;
+    font-weight: bold;
+}
+fieldset{
+    background-color: rgb(233, 248, 248) ;
+    border: 2px solid rgb(81, 134, 132);
+    margin: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    
+    box-shadow: 0  4px  4px #3e777480;
+}
+.class1{
+    width:100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size:20px
+
+}
+
+textarea{
+    width:calc(100% - 10px);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+button{
+    width: 100%;
+    margin: auto ;    
+    display:inline-block;
+    border: 2px solid rgb(247, 250, 250);
+    border-radius: 8px;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color:rgb(49, 112, 121) ;
+    color: white
+    
+}
+button:hover{
+    background-color:rgb(69, 139, 122);
+    color:black;
+    
+}
+h1 {
+    color: rgb(22, 22, 29);
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+  }
+h1:hover{
+    color:rgb(38, 116, 116)
+}
+  h1::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    
+    background-color: rgb(37, 139, 131);
+    bottom: 0;
+    left: 100%; /* Start at the middle */
+    transition: all 1s ease-in-out;
+    transform: translateX(-100%); /* Shift the start to the right */
+  }
+
+h1:hover::after{
+
+color: rgb(223, 89, 28);
+direction: rtl;
+width: 100%; /* Expand to half of the text */
+      left: 0%; /* Shift to the beginning */
+      transform: translateX(0);/* Remove the shift */
+
+
+}
+
+#Resume-generated {
+    max-width: 90%;
+    margin: auto;
+    font-size: 30px;
+    padding: 20px;
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    background-color: rgb(228, 242, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* to make resume editable*/
+    outline: none; 
+}
+    #resume-display h2 {
+    color: black;
+    }
+#shareable-link-container{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+ #shareable-link {
+    text-decoration: none;
+    color: blue;
+ }   
+ #shareable-link:hover{
+    color:rgb(69, 139, 122);
+ }
+ #DownloadPDF {
+    width:auto
+ }
